@@ -1,0 +1,110 @@
+body{
+    background-color: #c1c1c1;
+    width: 100%;
+}
+h1 {
+    display: block;
+    font-weight: bold;
+    text-align: center;
+}
+#container {
+    width: 350px;
+    /* height: auto; */
+    margin-right: 80px;
+    /* text-align: right; */
+    background: white;
+    height: 600px;
+    overflow-y: auto;
+    /* color: rgb(0, 0, 0); */
+    border: 10px solid #01a3a4;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+
+#container ul li{
+    list-style: none;
+    border: 2px solid #b5c5dd;
+    width: 80%;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    height: 40px;
+    /* margin: px auto; */
+    text-align:left;
+}
+#container ul li label {
+    margin: 0 auto;
+    vertical-align: right;
+    height: 100%;
+    line-height: 40px;
+    font-size: 18px;
+}
+
+.controls {
+    width: 250px;
+    margin-left: 20px;
+    background-color:rgb(255, 255, 255);
+    height: 300px;
+}
+#container ul li #check:checked:after {
+    content: '\2714';
+    
+}
+#container ul li input[type="checkbox"]:checked + label {
+    text-decoration: line-through;
+    color: rgba(0, 0, 0, .3);
+}
+
+
+
+#container .controls #input{
+    width: 100%;
+    height: 30px;
+    font-size: 20px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    border: 2px solid #184588;
+    border-radius: 10px;
+    margin-left: 25px;
+}
+#container .controls#input:focus{
+    outline:0;
+}
+#container .controls button{
+    width: 80%;
+    background: rgb(124, 46, 46);
+    border: 20px;
+    height: 30px;
+    margin-top: 20px;
+    margin-left: 50px;
+    padding-left: 20px;
+    cursor: pointer;
+    color: white;
+    border-radius: 10px;
+    
+}
+#container .controls button:focus {
+    outline: 0;
+}
+#container .controls button:hover {
+    transform: scale(1.05);
+}
+#contanier .controls #add {
+    background-color:#2980b9;
+    border-radius: 10px;
+}
+
+
+
+#contanier .controls #remove {
+    background-color: yellow;
+    border-radius: 10px;
+}
+#container .mycheck{
+    opacity: 1;
+    border-radius: 10px;
+}
+.visual {
+    opacity: 1 !important;
+    border-radius: 10px;
+}
